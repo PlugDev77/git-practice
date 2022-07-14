@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
             {
                 playerHP = 0;
                 Debug.Log("주금 사실 안주금 ㅋㅋ");
-                Debug.Log("진짜죽음 ㅋㅋ");
+                Debug.Log("진짜 죽었다니까? ㅋㅋ");
                 Debug.Log("주");
             }
             else
