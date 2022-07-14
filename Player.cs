@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
     {
         if (playerHP <= 0) {
             Debug.Log(playerHP.ToString() + "/" + "100");
-            Debug.Log("이미 죽음");
+            Debug.Log("아직 안죽었을수도");
             return;
         }
 
