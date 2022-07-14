@@ -16,8 +16,15 @@ public class Player : MonoBehaviour
     
     void Start()
     {
-        Debug.Log("TEST");
-        Debug.Log("HELLO");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
+        Debug.Log("helloworld");
         rigid = gameObject.GetComponent<Rigidbody2D>();
     }
 
