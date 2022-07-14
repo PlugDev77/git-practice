@@ -87,6 +87,7 @@ public class Player : MonoBehaviour
             if (playerHP - damage <= 0)
             {
                 playerHP = 0;
+                Debug.Log("주금 사실 안주금 ㅋㅋ");
                 Debug.Log("안녕하세요");
                 Debug.Log("주");
             }
