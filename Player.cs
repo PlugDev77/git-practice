@@ -43,16 +43,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        // I를 누르지 않아도 시간계산은 계속 해야하니까 로직을 따로 뺌
-        if (isDelay)
-        {
-            accumTime += Time.deltaTime; // 포션 섭취 후 흐른 시간을 계산해야하니까 accumTime에 더해줌
-            if (accumTime >= delayTime) // 흐른 시간과 딜레이시간 기준(5초)를 비교해서 5초가 지났으면에 대한 처리
-            {
-                isDelay = false;    // 5초가 지났으므로 딜레이가 없으니까 false
-                accumTime = 0.0f;   // 5초가 지났으므로 다시 초기화해서 변수 재사용해야하니까 0.0으로 다시 지정
-            }
-        }
+     
     }
 
     void EatPotion2()
