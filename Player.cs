@@ -118,6 +118,7 @@ public class Player : MonoBehaviour
 
     void jump()
     {
+        // มกวม
         if (Input.GetKey(KeyCode.Space))
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Force);
