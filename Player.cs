@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         move();
         jump();
         EatPotion2();
-        Debug.Log("happy");
+        Debug.Log("hy");
     }
 
     void EatPotion()
