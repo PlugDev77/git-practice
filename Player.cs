@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     float accumTime = 0.0f;
 
     private bool isHurt = false;
-    private int playerHP = 100;
+    private int playerHP = 200; // 수정
     
     void Start()
     {
