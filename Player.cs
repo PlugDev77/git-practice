@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     
     void Start()
     {
+        Debug.Log("TEST");
         Debug.Log("HELLO");
         rigid = gameObject.GetComponent<Rigidbody2D>();
     }
@@ -33,14 +34,14 @@ public class Player : MonoBehaviour
         {
             if (!isDelay)
             {
-                // ¸ÔÀ»¼ö ÀÖ´Â »óÈ², µô·¹ÀÌ°¡ ¾ø´Â »óÈ²
+                // ë¨¹ì„ìˆ˜ ìˆëŠ” ìƒí™©, ë”œë ˆì´ê°€ ì—†ëŠ” ìƒí™©
                 isDelay = true;
-                Debug.Log("Æ÷¼ÇÀ» ¸Ô¾î¼­ 50 È¸º¹Çß½À´Ï´Ù.");
+                Debug.Log("í¬ì…˜ì„ ë¨¹ì–´ì„œ 50 íšŒë³µí–ˆìŠµë‹ˆë‹¤.");
             }
             else
             {
-                // ¸ÔÀ»¼ö ¾ø´Â »óÈ², µô·¹ÀÌ°¡ ÀÖ´Â »óÈ²
-                //Debug.Log("Æ÷¼ÇÀ» ¸ÔÀ» ¼ö ¾ø½À´Ï´Ù :(");
+                // ë¨¹ì„ìˆ˜ ì—†ëŠ” ìƒí™©, ë”œë ˆì´ê°€ ìˆëŠ” ìƒí™©
+                //Debug.Log("í¬ì…˜ì„ ë¨¹ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤ :(");
             }
         }
 
@@ -53,16 +54,16 @@ public class Player : MonoBehaviour
         {
             if (!isDelay)
             {
-                // ¸ÔÀ»¼ö ÀÖ´Â »óÈ², µô·¹ÀÌ°¡ ¾ø´Â »óÈ²
+                // ë¨¹ì„ìˆ˜ ìˆëŠ” ìƒí™©, ë”œë ˆì´ê°€ ì—†ëŠ” ìƒí™©
                 isDelay = true;
-                Debug.Log("Æ÷¼ÇÀ» ¸Ô¾î¼­ 50 È¸º¹Çß½À´Ï´Ù.");
+                Debug.Log("í¬ì…˜ì„ ë¨¹ì–´ì„œ 50 íšŒë³µí–ˆìŠµë‹ˆë‹¤.");
 
                 StartCoroutine(Eat());
             }
             else
             {
-                // ¸ÔÀ»¼ö ¾ø´Â »óÈ², µô·¹ÀÌ°¡ ÀÖ´Â »óÈ²
-                //Debug.Log("Æ÷¼ÇÀ» ¸ÔÀ» ¼ö ¾ø½À´Ï´Ù :(");
+                // ë¨¹ì„ìˆ˜ ì—†ëŠ” ìƒí™©, ë”œë ˆì´ê°€ ìˆëŠ” ìƒí™©
+                //Debug.Log("í¬ì…˜ì„ ë¨¹ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤ :(");
             }
         }
 
@@ -77,7 +78,7 @@ public class Player : MonoBehaviour
     {
         if (playerHP <= 0) {
             Debug.Log(playerHP.ToString() + "/" + "100");
-            Debug.Log("ÀÌ¹Ì Á×À½");
+            Debug.Log("ì´ë¯¸ ì£½ìŒ");
             return;
         }
 
@@ -87,7 +88,7 @@ public class Player : MonoBehaviour
             if (playerHP - damage <= 0)
             {
                 playerHP = 0;
-                Debug.Log("ÁÖ±İ");
+                Debug.Log("ì£¼ê¸ˆ");
             }
             else
             {
@@ -106,7 +107,7 @@ public class Player : MonoBehaviour
 
     void move()
     {
-        // ÀÌµ¿
+        // ì´ë™
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * Time.deltaTime * 5f);
@@ -119,7 +120,7 @@ public class Player : MonoBehaviour
 
     void jump()
     {
-        // Á¡ÇÁ
+        // ì í”„
         if (Input.GetKey(KeyCode.Space))
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Force);
