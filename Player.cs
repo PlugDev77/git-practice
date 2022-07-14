@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     
     void Start()
     {
+        Debug.Log("hi");
         rigid = gameObject.GetComponent<Rigidbody2D>();
     }
 
