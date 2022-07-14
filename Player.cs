@@ -88,6 +88,7 @@ public class Player : MonoBehaviour
             {
                 playerHP = 0;
                 Debug.Log("안녕하세요");
+                Debug.Log("주");
             }
             else
             {
