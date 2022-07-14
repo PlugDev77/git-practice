@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public float jumpPower = 5f;
 
     bool isDelay = false;
-    float delayTime = 5.0f;
+    float delayTime = 3.0f; // 수정
     float accumTime = 0.0f;
 
     private bool isHurt = false;
