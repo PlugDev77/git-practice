@@ -114,11 +114,11 @@ public class Player : MonoBehaviour
         // 이동
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(Vector3.left * Time.deltaTime * 5f);
+            transform.Translate(Vector3.left * Time.deltaTime * 10f);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * 5f);
+            transform.Translate(Vector3.right * Time.deltaTime * 10f);
         }
     }
 
