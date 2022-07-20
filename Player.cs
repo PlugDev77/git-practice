@@ -39,6 +39,9 @@ public class Player : MonoBehaviour
             }
             else
             {
+                Debug.Log("포션을 먹어서 50 회복했습니다.");
+                Debug.Log("포션을 먹어서 50 회복했습니다.");
+                Debug.Log("포션을 먹어서 50 회복했습니다.");
                 // 먹을수 없는 상황, 딜레이가 있는 상황
                 //Debug.Log("포션을 먹을 수 없습니다 :(");
             }
