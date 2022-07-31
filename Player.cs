@@ -39,7 +39,8 @@ public class Player : MonoBehaviour
             }
             else
             {
-                Debug.Log("안녕하세요");
+                Debug.Log("12345");
+                Debug.Log("피곤해요...집에가고싶어요...");
                 Debug.Log("포션을 먹어서 50 회복했습니다.");
                 Debug.Log("포션을 먹어서 50 회복했습니다.");
                 // 먹을수 없는 상황, 딜레이가 있는 상황
@@ -98,6 +99,7 @@ public class Player : MonoBehaviour
             {
                 playerHP -= damage;
                 Debug.Log(playerHP.ToString() + "/" + "너무 졸리당...");
+                Debug.Log(playerHP.ToString() + "/" + "너무졸령");
                 StartCoroutine(HurtDelay());
             }
         }
