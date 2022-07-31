@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
             else
             {
                 playerHP -= damage;
-                Debug.Log(playerHP.ToString() + "/" + "100");
+                Debug.Log(playerHP.ToString() + "/" + "너무 졸리당...");
                 StartCoroutine(HurtDelay());
             }
         }
